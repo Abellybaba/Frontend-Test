@@ -6,6 +6,7 @@ export default function Home() {
         "mailto: \u006d\u007a\u0068\u0040\u006c\u0065\u0074\u0073\u0073\u0074\u006f\u0070\u0061\u0069\u0064\u0073\u002e\u006f\u0072\u0067";
     return (
         <main>
+            <Todo />
             <div className="header-container">
                 <h1>Test - React + NextJS</h1>
                 <h4>
@@ -13,7 +14,7 @@ export default function Home() {
                     The test is used for and only for LetsStopAIDS. Please do
                     not share this with anyone else.
                 </h4>
-                <div className="steps">
+                {/* <div className="steps">
                     <h3>Steps:</h3>
                     <ol>
                         <li>
@@ -87,9 +88,9 @@ export default function Home() {
                     <p>
                         Note 2:🚫Do NOT use external libraries to complete it.
                     </p>
-                </div>
+                </div> */}
             </div>
-            <Todo />
+            
         </main>
     );
 }

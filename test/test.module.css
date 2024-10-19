@@ -1,4 +1,138 @@
-.container{
+/* .container{
     height: 80vh;
     background-color: aliceblue;
+} */
+
+/* modules/test/test.module.css */
+
+.todoContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a specific class for h2 */
+.todoHeading {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.inputContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.addButton {
+    margin-left: 10px;
+    padding: 12px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: #005bb5;
+}
+
+.error {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.todoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.todoItem span {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.editInput {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.editButton, .deleteButton {
+    padding: 8px 12px;
+    margin-left: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editButton {
+    background-color: #f39c12;
+    color: white;
+}
+
+.editButton:hover {
+    background-color: #e67e22;
+}
+
+.deleteButton {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .todoContainer {
+        padding: 15px;
+    }
+
+    .todoHeading {
+        font-size: 1.5rem;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+    }
+
+    .input {
+        margin-bottom: 10px;
+    }
+
+    .addButton {
+        width: 100%;
+    }
 }
